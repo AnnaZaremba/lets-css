@@ -1,2 +1,2 @@
 # lets-CSS
-Let's CSS workshop  / starting packet
+Let's CSS workshop
