@@ -24,6 +24,7 @@ body {
     position: absolute;
     bottom: 150px;
     left: 300px;
+    right: 300px;
 }
 
 .container div {
@@ -111,15 +112,63 @@ body {
     margin-left: 30px;
     margin-top: 10px;
     clear: both;
+    animation-name: miganie;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-direction: alternate-reverse;
+    animation-duration: 1.2s;
+}
+
+.okno:nth-child(1) {
+    animation-delay: 0.2s;
+
+}
+
+.okno:nth-child(2) {
+    animation-delay: 0.4s;
+
+}
+
+.okno:nth-child(3) {
+    animation-delay: 0.6s;
+
+}
+
+.okno:nth-child(4) {
+    animation-delay: 0.8s;
+
+}
+
+.okno:nth-child(5) {
+    animation-delay: 1s;
+
+}
+
+.okno:nth-child(6) {
+    animation-delay: 1.2s;
+
+}
+
+@keyframes miganie {
+    0% {
+        background-color: #5854ae;
+    }
+    50% {
+        background-color: white;
+    }
+    100% {
+        background-color: #5854ae;
+    }
 }
 
 .palac {
-        width: 280px;
-        height: 340px;
-        position: absolute;
-        left: 760px;
-        bottom: 0;
+    width: 280px;
+    height: 340px;
+    position: absolute;
+    left: 760px;
+    bottom: 0;
 }
+
 .palac.jeden {
     width: 270px;
     height: 30px;
@@ -127,13 +176,14 @@ body {
     left: 0px;
     bottom: 0;
 }
+
 .palac.drzwi {
     width: 15px;
     height: 15px;
     position: absolute;
     left: 120px;
     bottom: -3px;
-    background-color:floralwhite;
+    background-color: floralwhite;
 }
 
 .palac.dwa {
@@ -162,6 +212,7 @@ body {
     bottom: 195px;
     border-bottom: none;
 }
+
 .palac.piec {
     width: 30px;
     height: 40px;
@@ -199,3 +250,200 @@ body {
     background-color: #4a4a49;
     border: 2px solid #4a4a49;
 }
+
+.domek {
+    left: 1110px;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+}
+
+.domek.pierwszy {
+    left: 0px;
+    width: 39px;
+    height: 73px;
+    position: absolute;
+}
+
+.domek.drugi {
+    left: 50px;
+    width: 39px;
+    height: 49px;
+    position: absolute;
+}
+
+.daszek-pierwszy {
+    left: -2px;
+    bottom: 79px;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    border-bottom: 25px solid #4a4a49;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 0;
+}
+
+.daszek-drugi {
+    left: 48px;
+    bottom: 55px;
+    width: 35px;
+    height: 20px;
+    position: absolute;
+    border-bottom: 25px solid #4a4a49;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 0;
+}
+
+.krzywy-wiezowiec {
+    left: 1160px;
+    bottom: 0;
+    position: absolute;
+    width: 200px;
+    height: 400px;
+}
+
+.krzywy {
+    background-color: transparent;
+    position: absolute;
+    width: 60px;
+    bottom: 4px;
+    border-top: 326px solid lightgray;
+    border-left: 90px solid transparent;
+    border-right: 3px solid transparent;
+}
+
+.krzywy-dwa {
+    background-color: transparent;
+    position: absolute;
+    width: 60px;
+    bottom: 0px;
+    border-top: 334px solid #4a4a49;
+    border-left: 94px solid transparent;
+    border-right: 4px solid transparent;
+}
+
+.trojkat-wiezowiec {
+    left: 80px;
+    bottom: 300px;
+    position: absolute;
+    border-top: 34px solid #85cadd;
+    border-left: 80px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 0;
+}
+
+.komin {
+    left: 112px;
+    bottom: 310px;
+    position: absolute;
+    border-top: 10px solid lightgray;
+    border-left: 20px solid transparent;
+    border-right: 0px solid transparent;
+    height: 0;
+    width: 0;
+}
+
+.komin-dwa {
+    left: 112px;
+    bottom: 310px;
+    position: absolute;
+    border-top: 13px solid #4a4a49;
+    border-left: 22px solid transparent;
+    border-right: 2px solid transparent;
+    height: 0;
+    width: 0;
+}
+
+.ramka {
+    position: absolute;
+    background-color: #4a4a49;
+    height: 346px;
+    width: 4px;
+    left: 1204px;
+    transform: rotate(-15deg);
+    bottom: -6px;
+}
+
+.ramka-dwa {
+    position: absolute;
+    background-color: #4a4a49;
+    height: 81px;
+    width: 4px;
+    left: 1277px;
+    transform: rotate(-70deg);
+    bottom: 277px;
+}
+
+.ramka-trzy {
+    position: absolute;
+    background-color: #c1272d;
+    height: 330px;
+    width: 4px;
+    left: 1212px;
+    transform: rotate(-15deg);
+    bottom: 0px;
+    animation-name: przenikanie;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes przenikanie {
+    0% {
+        background-color: #c1272d;
+    }
+    50% {
+        background-color: #00a99d;
+    }
+    100% {
+        background-color: #5854ae;
+    }
+}
+
+.niebo {
+    position: absolute;
+    height: 200px;
+    width: 1330px;
+    background-color: aqua;
+    bottom: 500px;
+}
+
+.samolot {
+    position: absolute;
+    top: 100px;
+    left:50px;
+    width: 150px;
+    height: 50px;
+    background-color: lightgrey;
+    animation: obrot_i_przemieszczenie 9s ease infinite;
+}
+
+@keyframes obrot_i_przemieszczenie {
+    0% {
+        left: : -200px;
+        transform: rotate(0deg); translate(200px);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        left: : 300px;
+    }
+    75% {
+        transform: rotate(2deg);
+    }
+    100% {
+        left: : 1500px;
+        transform: rotate(0deg);
+    }
+}
+
+.niebo {}
+
+.samolot {}
