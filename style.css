@@ -445,10 +445,18 @@ body {
     }
 }
 
+.stadion {
+    position: absolute;
+    height: 150px;
+    width: 200px;
+    left:150px;
+    bottom: 0;
+
+}
 .prostokat {
-    left: 150px;
     width: 150px;
     height: 0;
+    margin-top: 50px;
     border-left: 30px solid transparent;
     border-right: 24px solid transparent;
     border-top: 100px solid lightgray;
@@ -464,77 +472,76 @@ body {
 }
 
 .filar1 {
-    left: 160px;
+    left: 10px;
     transform: rotate(-15deg);
 }
 
 .filar2 {
-    left: 190px;
+    left: 40px;
     transform: rotate(-10deg);
 }
 
 .filar3 {
-    left: 220px;
+    left: 70px;
     transform: rotate(-5deg);
 }
 
 .filar4 {
-    left: 250px;
+    left: 100px;
     height: 150px;
 }
 
 .filar5 {
-    left: 280px;
+    left: 130px;
     transform: rotate(5deg);
 }
 
 .filar6 {
-    left: 310px;
+    left: 160px;
     transform: rotate(10deg);
 }
 
 .filar7 {
-    left: 340px;
+    left: 192px;
     transform: rotate(15deg);
 }
 
 .filar8 {
     height: 105px;
-    left: 200px;
+    left: 50px;
     bottom: 58px;
     transform: rotate(80deg);
 }
 
 .filar9 {
     height: 105px;
-    left: 300px;
+    left: 150px;
     bottom: 58px;
     transform: rotate(-80deg);
 }
 
 .filar10 {
-    left: 150px;
     height: 4px;
     width: 200px;
     bottom: 100px;
 }
 
 .filar11 {
-    left: 157px;
+    left: 7px;
     height: 4px;
     width: 192px;
     bottom: 75px;
 }
 
 .filar12 {
-    left: 162px;
+    left: 12px;
     height: 4px;
     width: 180px;
     bottom: 50px;
 }
 
 .filar13 {
-    left: 169px;
+    left: 19px;
     height: 4px;
     width: 166px;
     bottom: 25px;
@@ -542,7 +549,7 @@ body {
 
 .dach {
     position: absolute;
-    left: 233px;
+    left: 83px;
     bottom: 120px;
     width: 30px;
     height: 10px;
