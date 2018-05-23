@@ -417,7 +417,7 @@ body {
 .samolot {
     position: absolute;
     top: 100px;
-    left:50px;
+    left: 50px;
     width: 150px;
     height: 50px;
     background-color: lightgrey;
@@ -427,7 +427,8 @@ body {
 @keyframes obrot_i_przemieszczenie {
     0% {
         left: : -200px;
-        transform: rotate(0deg); translate(200px);
+        transform: rotate(0deg);
+        translate(200px);
     }
     25% {
         transform: rotate(3deg);
@@ -444,6 +445,108 @@ body {
     }
 }
 
-.niebo {}
+.prostokat {
+    left: 150px;
+    width: 150px;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 24px solid transparent;
+    border-top: 100px solid lightgray;
+    position: absolute;
+}
 
-.samolot {}
+.filary {
+    position: absolute;
+    background-color: #4a4a49;
+    width: 4px;
+    height: 120px;
+    bottom: -2px;
+}
+
+.filar1 {
+    left: 160px;
+    transform: rotate(-15deg);
+}
+
+.filar2 {
+    left: 190px;
+    transform: rotate(-10deg);
+}
+
+.filar3 {
+    left: 220px;
+    transform: rotate(-5deg);
+}
+
+.filar4 {
+    left: 250px;
+    height: 150px;
+}
+
+.filar5 {
+    left: 280px;
+    transform: rotate(5deg);
+}
+
+.filar6 {
+    left: 310px;
+    transform: rotate(10deg);
+}
+
+.filar7 {
+    left: 340px;
+    transform: rotate(15deg);
+}
+
+.filar8 {
+    height: 105px;
+    left: 200px;
+    bottom: 58px;
+    transform: rotate(80deg);
+}
+
+.filar9 {
+    height: 105px;
+    left: 300px;
+    bottom: 58px;
+    transform: rotate(-80deg);
+}
+
+.filar10 {
+    left: 150px;
+    height: 4px;
+    width: 200px;
+    bottom: 100px;
+}
+
+.filar11 {
+    left: 157px;
+    height: 4px;
+    width: 192px;
+    bottom: 75px;
+}
+
+.filar12 {
+    left: 162px;
+    height: 4px;
+    width: 180px;
+    bottom: 50px;
+}
+
+.filar13 {
+    left: 169px;
+    height: 4px;
+    width: 166px;
+    bottom: 25px;
+}
+
+.dach {
+    position: absolute;
+    left: 233px;
+    bottom: 120px;
+    width: 30px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 20px;
+    border: 4px solid #4a4a49;
+}
